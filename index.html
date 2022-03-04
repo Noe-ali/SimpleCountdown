@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Countdown - Cumpleaños del Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./confetti.css">
+
+</head>
+<body >
+    <button id="confetti-btn" type="button">Confetti <i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
+
+    <section class="section-center">
+
+        <!--image-->
+        <article class="gift-img" >
+            
+            <img src="./src/eggteban.jpg" alt="foto del admin" id="foto"/>
+
+            <!--<img class="top" src="./src/eggteban.jpg" alt="foto del admin 2"/> -->
+        
+        </article>
+
+        <!--info -->
+        <article class="gift-info" >
+            <h3>Cumpleaños de Esteban</h3>
+            
+            <p>No te quedes afuera de su fiesta privada, en la que podrás darle personalmente en toda su madre.
+                Guarda la fecha, prepara tus regalos y tus mejores insultos para la fiesta del año, permitida la entrada a mascotas y personas de la tercera edad.
+                <br>
+                <center>  <b>Definitivamente no te lo puedes perder.</b></center>
+            </p> 
+            
+            <h4 class="birthday">
+                
+            </h4>
+
+                
+            <div class="deadline">
+                <!--days-->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="days">34</h4>
+                        <span>Días</span>
+                    </div>
+                    <!--end of item-->
+                </div>
+                <!--hours-->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="hours">34</h4>
+                        <span>Horas</span>
+                    </div>
+                    <!--end of item-->
+                </div>
+                <!--minutes-->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="minutes">34</h4>
+                        <span>Minutos</span>
+                    </div>
+                    <!--end of item-->
+                </div>
+                <!--seconds-->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="secs">34</h4>
+                        <span>Segundos</span>
+                    </div>
+                    <!--end of item-->
+                </div>
+             
+
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <div >
+                <button onclick="location.href='https://www.instagram.com/monkey_unusual/';"><i class="fa-brands fa-instagram"></i></button>
+                <button onclick="location.href='https://twitter.com/Unusual_Monkey';"><i class="fa-brands fa-twitter"></i></button>
+                <button class="open-modal" data-open="modal1">SKHusky</button>
+                
+            </div>
+        </article>
+        
+    </section>
+
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+          <header class="modal-header">
+              <span></span>
+            <button class="close-modal" aria-label="close modal" data-close>
+              ✕  
+            </button>
+          </header>
+          <section class="modal-content">
+            <p><strong>Presiona ✕, ESC, o click fuera del video para cerrarlo</strong></p>
+            <p><video id="video" src="./src/SKHUSKY.mp4"  controls></video></p>
+          </section>
+          <footer class="modal-footer">
+          </footer>
+        </div>
+      </div>
+    <!-- JavaScript-->
+    <script src="./app.js"></script>
+    <script type="module" src="./confetti.js"></script>
+    <script src="./node_modules/tsparticles/tsparticles.min.js"></script>
+
+
+</body>
+</html>
