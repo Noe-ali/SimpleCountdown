@@ -1,4 +1,4 @@
-import { tsParticles } from "tsparticles";
+
 
 const btnConfetti = document.getElementById("confetti-btn");
 
