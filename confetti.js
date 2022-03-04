@@ -1,3 +1,5 @@
+
+
 const btnConfetti = document.getElementById("confetti-btn");
 
 let status = true;
@@ -12,7 +14,7 @@ function toggleStatus(newStatus) {
   status = newStatus;
 
   if (status) {
-    load(particlesOptions).then((container) => {
+    tsParticles.load(particlesOptions).then((container) => {
       particlesContainer = container;
 
       document.querySelector(".fa-play").classList.add("hidden");
