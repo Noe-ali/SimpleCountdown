@@ -1,6 +1,3 @@
-const { tsParticles } = require("tsparticles");
-
-
 
 
 const btnConfetti = document.getElementById("confetti-btn");
@@ -17,7 +14,7 @@ function toggleStatus(newStatus) {
   status = newStatus;
 
   if (status) {
-    tsParticles.load(particlesOptions).then((container) => {
+    load(particlesOptions).then((container) => {
       particlesContainer = container;
 
       document.querySelector(".fa-play").classList.add("hidden");
