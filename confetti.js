@@ -1,3 +1,4 @@
+const { tsParticles } = require("tsparticles");
 
 
 
