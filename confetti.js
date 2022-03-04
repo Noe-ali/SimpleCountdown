@@ -1,5 +1,7 @@
 
 
+
+
 const btnConfetti = document.getElementById("confetti-btn");
 
 let status = true;
