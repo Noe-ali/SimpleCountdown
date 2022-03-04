@@ -1,3 +1,4 @@
+const { tsParticles } = require("tsparticles");
 
 
 const btnConfetti = document.getElementById("confetti-btn");
