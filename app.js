@@ -46,7 +46,7 @@ const weekday = weekdays[futureDate.getDay()];
 const date = futureDate.getDate();
 
 birthday.textContent = ` El cumpleaños del chango es el: \n ${weekday} ${date} 
-de ${month} de ${year} ${hours}:${minutes}am `;
+de ${month} de ${year} ${hours}:${minutes}pm `;
 
 //future time in ms
 const futureTime = futureDate.getTime();
