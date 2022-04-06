@@ -34,7 +34,7 @@ const items = document.querySelectorAll('.deadline-format h4');
 //let tempDay = tempDate.getDate();
 // months are ZERO index based;
 //const futureDate = new Date(tempYear, tempMonth, tempDay + 23, 00, 00, 0);
-let futureDate = new Date(2022,2,26,15,30,00);
+let futureDate = new Date(2023,2,26,15,30,00);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
@@ -45,7 +45,7 @@ month = months[month];
 const weekday = weekdays[futureDate.getDay()];
 const date = futureDate.getDate();
 
-birthday.textContent = ` El cumpleaños del chango es el: \n ${weekday} ${date} 
+birthday.textContent = ` La fiesta de cumpleaños se celebrará el día \n ${weekday} ${date} 
 de ${month} de ${year} ${hours}:${minutes}pm `;
 
 //future time in ms
